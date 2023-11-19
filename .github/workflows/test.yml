@@ -5,6 +5,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/node-setup@v3
+        with:
+          node-version: "18.x"
       - run: echo "Hello world"
       - name: Install dependancies
       - run: npm i -g tldr
