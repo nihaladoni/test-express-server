@@ -2,6 +2,6 @@ name: apps
 on: [push]
 jobs:
   test-server:
-    runs-on: ubuntu
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Hello world"
