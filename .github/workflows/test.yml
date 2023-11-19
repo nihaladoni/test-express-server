@@ -4,4 +4,10 @@ jobs:
   test-server:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/node-setup@v3
       - run: echo "Hello world"
+      - name: Install dependancies
+      - run: npm i -g tldr
+      - run: tldr cat
+    
+  
