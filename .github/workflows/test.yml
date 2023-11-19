@@ -1,0 +1,7 @@
+name: apps
+on: [push]
+jobs:
+  test-server:
+    runs-on: ubuntu
+    steps:
+      - run: echo "Hello world"
